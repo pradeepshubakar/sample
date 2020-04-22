@@ -11,7 +11,7 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.testng.annotations.BeforeMethod;
 
-public class FileLib {
+public class FileLib1 {
 
 	public String getPropertyFileData(String key) throws IOException {
 		FileInputStream fis=new FileInputStream("./src/test/resources/data/Commondata.properties.txt");

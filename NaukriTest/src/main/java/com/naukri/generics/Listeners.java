@@ -10,7 +10,7 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-public class Listeners extends BaseClass implements ITestListener{
+public class Listeners extends BaseClass1 implements ITestListener{
 
 	public void onFinish(ITestContext arg0) {
 		// TODO Auto-generated method stub

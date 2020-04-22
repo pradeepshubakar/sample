@@ -6,18 +6,18 @@ import java.io.IOException;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
-import com.naukri.generics.BaseClass;
-import com.naukri.generics.FileLib;
+import com.naukri.generics.BaseClass1;
+import com.naukri.generics.FileLib1;
 import com.naukri.generics.webDrivernCommonLib;
-import com.naukri.pom.HomePage;
-import com.naukri.pom.LoginPage;
+import com.naukri.pom.HomePage1;
+import com.naukri.pom.LoginPage1;
 
-public class UploadResume extends BaseClass {
+public class UploadResume extends BaseClass1 {
 @Test
 public void testUploadResume() throws IOException, InterruptedException {
-	HomePage h=new HomePage(driver);
-	LoginPage l=new LoginPage(driver);
-	FileLib f=new FileLib();
+	HomePage1 h=new HomePage1(driver);
+	LoginPage1 l=new LoginPage1(driver);
+	FileLib1 f=new FileLib1();
 	
 	webDrivernCommonLib w=new webDrivernCommonLib();
 	driver.get(f.getPropertyFileData("url"));

@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class HomePage {
+public class HomePage1 {
 @FindBy(xpath="//div[.='Pradeep.B.S']")
 private WebElement nameLink;
 @FindBy(xpath="//a[.='Update']")
@@ -15,7 +15,7 @@ private WebElement attachCv;
 @FindBy(xpath="//a[.='Logout']")
 private WebElement logoutLink;
 
-public  HomePage(WebDriver driver) {
+public  HomePage1(WebDriver driver) {
 	PageFactory.initElements(driver, this);
 }
 public void clickNameLink() {
