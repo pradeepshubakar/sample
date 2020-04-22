@@ -1,0 +1,4 @@
+username bspradee@gmail.com
+password shantha@123
+url https://www.naukri.com/
+browser chrome
