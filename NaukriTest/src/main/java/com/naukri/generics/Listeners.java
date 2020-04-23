@@ -32,7 +32,7 @@ public class Listeners extends BaseClass1 implements ITestListener{
 		String tcName = result.getName();
 		TakesScreenshot t=(TakesScreenshot) driver;
 		File src = t.getScreenshotAs(OutputType.FILE);
-		File dest=new File("./src/test/resources/ScreenShot");
+		File dest=new File("./src/test/resources/ScreenShot/"+tcName+".png");
 		try {
 			FileUtils.copyFile(src, dest);
 		} catch (IOException e) {
