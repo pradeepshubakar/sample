@@ -1,7 +1,6 @@
 package com.naukri.generics;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
@@ -9,7 +8,6 @@ import org.apache.poi.EncryptedDocumentException;
 
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
-import org.testng.annotations.BeforeMethod;
 
 public class FileLib1 {
 
