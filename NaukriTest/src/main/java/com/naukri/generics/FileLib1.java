@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 import org.apache.poi.EncryptedDocumentException;
-import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.testng.annotations.BeforeMethod;
@@ -21,7 +21,7 @@ public class FileLib1 {
 		return value;
 		
 	}
-	public String getExcelData(String path,String sheetName,int rowNum,int cellNum) throws EncryptedDocumentException, InvalidFormatException, IOException {
+	public String getExcelData(String path,String sheetName,int rowNum,int cellNum) throws EncryptedDocumentException, IOException {
 		FileInputStream fis=new FileInputStream(path);
 		Workbook wb = WorkbookFactory.create(fis);
 		String value = wb.getSheet(sheetName).getRow(rowNum).getCell(cellNum).getStringCellValue();
@@ -29,7 +29,7 @@ public class FileLib1 {
 		
 		
 	}
-	public String setExcelData(String path,String sheetName,int rowNum,int cellNum,String value) throws EncryptedDocumentException, InvalidFormatException, IOException {
+	public String setExcelData(String path,String sheetName,int rowNum,int cellNum,String value) throws EncryptedDocumentException,  IOException {
 		FileInputStream fis=new FileInputStream(path);
 		Workbook wb = WorkbookFactory.create(fis);
 		wb.getSheet(sheetName).getRow(rowNum).getCell(cellNum).setCellValue(value);
