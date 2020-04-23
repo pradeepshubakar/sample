@@ -24,12 +24,13 @@ public void launchBrowser() throws IOException {
 	String browser = f.getPropertyFileData("browser");
 	if (browser.equalsIgnoreCase("chrome")) {
 		driver=new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	else if (browser.equalsIgnoreCase("firefox")) {
 		driver=new FirefoxDriver();
-		
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
-	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	
 }
 
 	
