@@ -15,9 +15,10 @@ static {
 	System.setProperty("webdriver.gecko.driver", "./src/main/resources/driver/geckodriver.exe");
 }
 public static WebDriver driver;
-FileLib1 f=new FileLib1();
+public FileLib1 f=new FileLib1();
 
 @BeforeClass
+
 public void launchBrowser() throws IOException {
 	String browser = f.getPropertyFileData("browser");
 	if (browser.equalsIgnoreCase("chrome")) {

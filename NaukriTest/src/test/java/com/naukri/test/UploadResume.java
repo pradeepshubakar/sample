@@ -12,12 +12,14 @@ import com.naukri.generics.FileLib1;
 import com.naukri.generics.webDrivernCommonLib;
 import com.naukri.pom.HomePage1;
 import com.naukri.pom.LoginPage1;
-@Listeners(com.naukri.generics.Listeners.class)
+
+@Listeners(com.naukri.generics.Listeners1.class)
 public class UploadResume extends BaseClass1 {
 @Test
 public void testUploadResume() throws IOException, InterruptedException {
 	HomePage1 h=new HomePage1(driver);
 	LoginPage1 l=new LoginPage1(driver);
+	
 	FileLib1 f=new FileLib1();
 	
 	webDrivernCommonLib w=new webDrivernCommonLib();
