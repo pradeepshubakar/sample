@@ -29,7 +29,7 @@ public void testUploadResume() throws IOException, InterruptedException {
 	l.getPasswordTbx().sendKeys(f.getPropertyFileData("password"));
 	l.clickLoginButton();
 	h.clickNameLink();
-	h.clickUpdateLink();
+	//h.clickUpdateLink();
 	File relPath=new File("./src/test/resources/data/pradeep resume .docx");
 	String absPath = relPath.getAbsolutePath();
 	h.getAttachCv().sendKeys(absPath);
